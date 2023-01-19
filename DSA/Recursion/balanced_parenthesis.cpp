@@ -1,8 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
+int c=0;
 void solve(string op,int open, int close){
     if(open==0&&close==0){
         cout<<op<<endl;
+        c++;
         return;
     }
     if(open!=0)
@@ -19,5 +21,6 @@ void solve(string op,int open, int close){
     }
 }
 int main(){
-solve("",3,3);
+solve("",20,20);
+cout<<c;
 }
